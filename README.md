@@ -14,4 +14,4 @@ docker run -d -p [LocalPort]:[LocalPort] -e "LOCAL_PORT=[LocalPort]" -e "REMOTE_
 ```
 
 ## Notes
-For security reasons this container will change the permisions of the ID_FILe to 400 (Read only by the user).
+This container asumes that the *ID_FILE* has read only permissions by the user (chmod 400), if thats not the case the ssh tunnel may fail.
